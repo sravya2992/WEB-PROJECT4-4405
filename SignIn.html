@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="Mystyles3.css">
+        <style>
+            h2{
+                text-shadow: 5px 5px 10px red;
+            }
+            .contain{
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                padding-top: 4%;
+                padding-bottom: 4%;
+            }
+            img{
+                width: 350;
+                height: 300;
+                
+            }
+            .text{
+                font-size: 16;
+                padding: 2%;
+            }
+            @media  screen and (min-width:550px) {
+            body{
+                background-image: url("download (2).jpg");
+            }
+        }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./ContactUs.html">ContactUs</a></li>
+                <li><a href="./SignIn.html">Sign In</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <form action="./Submission.html">
+            <body>
+                <center><h2>Travel Reservation Form</h2>
+                <form>
+                  <h3>* Denotes mandotory</h3>
+                  <label for="fullname" required>Fullname*:</label>
+                  <br/>
+                  <input type="text" name="fullname" id="fullname"
+                  placeholder="FirstName LastName"><br/>
+                  <label for="email" required>Email Address*:</label><br/>
+                  <input type="email" name="email" id="email" placeholder="Email_Address"><br/>
+                  <label for="tourpack" required>Selection Tour Package*:</label><br/>
+                  <select name="tourpack" id="tourpack">
+                    <option value="goa">Goa</option>
+                    <option value="shimla">Shimla</option>
+                    <option value="guwahati">Guwahati</option>
+                    <option value="chembur">Chembur</option>
+                    <option value="nainitaal">Nainitaal</option>
+                  </select><br/>
+                  <label for="arrivaldate" required>Arrival Date*:</label><br/>
+                  <input type="text" name="arrivaldate" id="arrivaldate" placeholder="dd/mm/yyyy" />
+                  <br/>
+                  <label for="numberofperson">Number of person*:</label><br/>
+                  <input type="number" name="numberofperson" id="numberofperson" placeholder="UNKNOWN_TYPE" />
+                  <br/>
+                  <div>
+                  What you want to avail?*<br/>
+                  <label for="checkbox1">Boarding</label>
+                  <input type="checkbox" name="checkbox" id="checkbox1"/><br/>
+                  <label for="checkbox2">Fooding</label>
+                  <input type="checkbox" name="checkbox" id="checkbox2"/><br/>
+                  <label for="checkbox3">Sight seeing</label>
+                  <input type="checkbox" name="checkbox" id="checkbox3"/><br/>
+                  </div>
+                  <label for="discount">Discount Coupon Code:</label><br/>
+                  <input type="number" name="discount" id="discount" placeholder="UNKNOWN_TYPE" />
+                  <br/>
+                  <div>
+                    Terms and conditions*<br/>
+                    <input type="radio" name="radio" id="radio1" />
+                    <label for="radio">I agree</label>
+                    <input type="radio" name="radio" id="radio2" />
+                    <label for="radio2">I disagree</label>
+                  </div>
+                  <input type="submit" name="submit" id="submit" value="Complete Reservation" /></form></center>
+                </form>
+            
+              </body>
+            </html>
